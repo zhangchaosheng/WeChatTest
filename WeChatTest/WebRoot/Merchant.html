@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>接入支付申请</title>
+
+<meta name="keywords" content="keyword1,keyword2,keyword3">
+<meta name="description" content="接入支付申请">
+<meta name="content-type" content="text/html; charset=UTF-8">
+
+<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<style type="text/css">
+table.gridtable {
+	font-family: verdana, arial, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+	width: 950px;
+	height: 70px;
+	font-family: arial;
+	color: blue;
+	font-size: 50px;
+}
+
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+	width: 950px;
+	height: 70px;
+	font-family: arial;
+	font-size: 50px;
+}
+
+input {
+	width: 100%;
+	height: 100%;
+	font-family: arial;
+	font-size: 50px;
+}
+
+select {
+	padding-left: 5px;
+	width: 100%;
+	height: 100%;
+	font-family: arial;
+	font-size: 50px;
+}
+</style>
+
+</head>
+
+<body>
+	<form name="f1" id="f1" action="" method="post">
+		<table class="gridtable">
+			<tr>
+				<th>基本信息</th>
+			</tr>
+			<tr>
+				<td><input type="text" name="merchant_name" placeholder="商户名称"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="user_name" placeholder="联系人姓名"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="user_tel" placeholder="联系人电话"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="sec_code" placeholder="输入验证码" style="width:60%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">发送验证码</a></td>
+			</tr>
+			<tr>
+				<th>注册地址</th>
+			</tr>
+			<tr>
+				<td><select>
+						<option value="volvo">省/直辖市</option>
+						<option value="saab">北京</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><select>
+						<option value="volvo">地级市</option>
+						<option value="saab">北京市</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><select>
+						<option value="volvo">县/区</option>
+						<option value="saab">海淀区</option>
+				</select></td>
+			</tr>
+			<tr>
+				<th>其他信息</th>
+			</tr>
+			<tr>
+				<td><select>
+						<option value="volvo">商户属性</option>
+						<option value="saab">AAAA</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><select>
+						<option value="volvo">行业一级分类</option>
+						<option value="saab">1</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><select>
+						<option value="volvo">行业二级分类</option>
+						<option value="saab">1</option>
+				</select></td>
+			</tr>
+			<tr>
+				<th>其他信息</th>
+			</tr>
+			<tr>
+				<td><select>
+						<option value="volvo">证件类型</option>
+						<option value="saab">居民身份证</option>
+						<option value="saab">军官证</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>是否接入二维码：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+					type="radio" name="sex" value="male"
+					style="height:50px;width:30px;" />是 <input type="radio" name="sex"
+					value="female" style="height: 50px;width:30px;" />否
+				</td>
+
+			</tr>
+			<tr>
+				<td><input type="text" name="user_name" placeholder="请输入二维码对应数字编号"></td>
+			</tr>
+			<tr>
+				<td><input type="button" name="user_name" value="确认并提交"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
