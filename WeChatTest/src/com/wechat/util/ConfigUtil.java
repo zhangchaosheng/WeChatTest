@@ -27,7 +27,7 @@ public class ConfigUtil {
 	        if (os != null && os.startsWith("Windows")) {  
 	        	cfgFilePath = "D:/" + cfgFilePath;
 	        }else{
-	        	cfgFilePath = "/home/chaosheng.zhang/" + cfgFilePath;
+	        	cfgFilePath = "/home/chaosheng.zhang/conf/" + cfgFilePath;
 	        }
 			Configuration config = new PropertiesConfiguration(cfgFilePath);
 			Iterator<String> iter = config.getKeys();

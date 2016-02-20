@@ -10,6 +10,7 @@ import com.wechat.model.Button;
 import com.wechat.model.CommonButton;
 import com.wechat.model.ComplexButton;
 import com.wechat.model.Menu;
+import com.wechat.model.ViewButton;
 
 public class MenuManager {
 	private static Logger log = LoggerFactory.getLogger(MenuManager.class);
@@ -92,6 +93,11 @@ public class MenuManager {
 		// btn25.setType("click");
 		// btn25.setKey("25");
 
+		ViewButton btn30 = new ViewButton();  
+        btn30.setName("商户接入");  
+        btn30.setType("view");  
+        btn30.setUrl("http://120.25.221.169/momoTroops/Merchant.html");  
+		
 		CommonButton btn31 = new CommonButton();
 		btn31.setName("操作指南");
 		btn31.setType("click");
@@ -117,7 +123,7 @@ public class MenuManager {
 
 		ComplexButton mainBtn3 = new ComplexButton();
 		mainBtn3.setName("服务支持");
-		mainBtn3.setSub_button(new CommonButton[] { btn31, btn32, btn33 });
+		mainBtn3.setSub_button(new Button[] {  btn30, btn31, btn32, btn33 });
 
 		/**
 		 * 这是公众号xiaoqrobot目前的菜单结构，每个一级菜单都有二级菜单项<br>

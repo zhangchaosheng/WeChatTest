@@ -38,7 +38,7 @@ public class SignUtil {
 		} catch (NoSuchAlgorithmException e) {
 			e.printStackTrace();
 		}
-		System.out.println("tmpStr=" + tmpStr);
+//		System.out.println("tmpStr=" + tmpStr);
 
 		content = null;
 		// 将sha1加密后的字符串可与signature对比，标识该请求来源于微信
